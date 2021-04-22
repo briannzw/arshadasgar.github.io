@@ -4,16 +4,17 @@ body {
     height: 100%;
     margin: 0;
     font-family: sans-serif;
+    cursor: none;
 }
 
 #container {
-    height: 90%;
-    width: 90%;
-    margin-left: 5%;
+    height: 100%;
+    width: 100%;
     position: relative;
-    border: 1px solid red;
     overflow: hidden;
-    background-color: #31b6ce;
+    background: url(background_city.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #score_help {
@@ -22,110 +23,148 @@ body {
     background-color: #eaeaea;
 }
 
+/*
 #branch {
     position: absolute;
-    height: 2%;
+    height: 3%;
     width: 100%;
     background-color: #7b2e00;
     top: 23%;
 }
+*/
 
-.hen {
+.ufo {
     position: absolute;
     height: 15%;
-    width: 8%;
+    width: 8%; 
     top: 10%;
-    background: url('hen-right.png');
-    background-size: cover;
+    background: url('ufo.png');
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     z-index: 100;
 }
 
-#hen1 {
+#ufo1 {
     left: 20%;
 }
 
-#hen2 {
+#ufo2 {
     left: 40%;
 }
 
-#hen3 {
+#ufo3 {
     left: 60%;
 }
 
-.egg {
+#ufo4 {
+    left: 80%;
+}
+
+.bullet {
     position: absolute;
     top: 18%;
     height: 5%;
     width: 2%;
-    background-color: #fff;
-    border-radius: 50%;
+    background: url('laserBullet.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 99;
 }
 
-#egg1 {
+#bullet1 {
     left: calc(20% + 8%/2 - 2%/2);
 }
 
-#egg2 {
+#bullet2 {
     left: calc(40% + 8%/2 - 2%/2);
 }
 
-#egg3 {
+#bullet3 {
     left: calc(60% + 8%/2 - 2%/2);
 }
 
-.bullseye {
+#bullet4 {
+    left: calc(80% + 8%/2 - 2%/2);
+}
+
+.burst {
     display: none;
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     height: 7%;
-    width: 7%;
-    background: url('bullseye1.png');
-    background-size: cover;
+    width: 10%;
+    background: url('laserBlue_groundBurst.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center;
     z-index: 11;
 }
 
-#bullseye1 {
+#burst1 {
     left: calc(20% + 8%/2 - 7%/2);
 }
 
-#bullseye2 {
+#burst2 {
     left: calc(40% + 8%/2 - 7%/2);
 }
 
-#bullseye3 {
+#burst3 {
     left: calc(60% + 8%/2 - 7%/2);
+}
+
+#burst4 {
+    left: calc(80% + 8%/2 - 7%/2);
 }
 
 #floor {
     position: absolute;
     height: 7%;
     width: 100%;
-    background-color: #292929;
     bottom: 0;
     z-index: 10;
 }
 
-#basket {
-    height: 100px;
-    width: 85px;
+#hero {
+    height: 120px;
+    width: 120px;
     position: absolute;
-    bottom: 5px;
-    background: url('basket.png');
-    background-size: cover;
+    bottom: 8%;
+    background: url('shieldHero.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
     z-index: 11;
 }
 
+#girl{
+    height: 90px;
+    width: 60px;
+    position: absolute;
+    bottom: 8%;
+    background-image: url('hero_girl_idle.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 10;
+}
+
+#label1 {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    color: #272727;
+    font-size: 18px;
+    top: -50%;
+}
+
 #score_1 {
     position: absolute;
-    color: #424242;
+    width: 100%;
+    top: 40%;
+    color: white;
     font-size: 30px;
-    top: 45%;
-    left: 30%;
+    text-align: center;
 }
 
 #restart {
@@ -135,8 +174,8 @@ body {
     width: 100%;
     background-color: fuchsia;
     color: white;
-    top: 40%;
+    top: 45%;
     font-size: 35px;
-    display: none;
+    display: none;  /* hide terlebih dahulu */
     cursor: pointer;
 }
