@@ -1,4 +1,4 @@
-Tugas Pemrograman Web 1
+Tugas Pemrograman Web I
 oleh Brian Wijaya - 201401042
 Universitas Sumatera Utara
 * Modified for studies by Brian Wijaya
